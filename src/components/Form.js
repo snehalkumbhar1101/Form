@@ -71,10 +71,10 @@ function Formm() {
 
   };
 
-  const Formm = () => {
-    const [phone, setphone] = useState("");
-    const [isError, setIsError] = useState(false);
-  }
+  // const Formm = () => {
+  //   const [phone, setphone] = useState("");
+  //   const [isError, setIsError] = useState(false);
+  // }
 
 
 
@@ -87,7 +87,7 @@ function Formm() {
   const submitHandler = (e) => {
     e.preventDefault()
     console.log(name, gender, country, desc, email, phone, password)
-    if (name.length === 2 || gender === '' || country === 'none' || desc.length === 0 || email.length !== 'undefined' || phone.length !== 10 || password.pattern === "undefined") {
+    if (name.length === 2 || gender === '' || country === 'none' || desc.length === 0 || email.length !== 'undefined' || phone.length !== 10 || password.pattern !== "undefined") {
       alert('please fill mandatory details.')
       return
     }
